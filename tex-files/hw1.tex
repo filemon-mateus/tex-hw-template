@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{preamble}
+
+\begin{document}
+\fontin
+\header{Filemon Mateus}{CS 6XXX}{A Very Easy Course}{Homework \#\ 1}{\today}
+\begin{enumerate}
+  [
+    leftmargin={*},
+    label={\arabic*.},
+    font={\bf\fontin},
+    labelsep={10pt},
+    itemsep={20pt},
+    ref={\arabic*}
+  ]
+  \item \label{qst:1}
+    Here is a claim:
+    \begin{claim}[Twin primes conjecture]\label{clm:1}
+      There are infinitely many primes that are two apart.
+    \end{claim}
+    \begin{proof*}
+      The proof is left as an exercise for the interested reader.
+    \end{proof*}
+
+  \item \label{qst:2}
+    Here is a lemma:
+    \begin{lemma}[Johnson-Lindenstrauss '84]\label{lma:1}
+      A set of $n$ points in high dimensional Euclidean space can
+      be mapped into an $O(\log n/\eps^2)$-dimensional Euclidean
+      space such that the distance between any two points changes
+      by only a factor of $(1 \pm \eps)$.
+    \end{lemma}
+    \begin{proof*}
+      The proof is left as an exercise for the interested reader.
+    \end{proof*}
+
+  \item \label{qst:3}
+    Here is a remark:
+    \begin{remark}[Sexy primes conjecture]\label{rem:1}
+      There are infinitely many primes that are six apart.
+    \end{remark}
+    \begin{proof*}
+      The proof is left as an exercise for the interested reader.
+    \end{proof*}
+  
+  \item \label{qst:4}
+    Here is a corollary:
+    \begin{corollary}[Cousin primes conjecture]\label{cor:1}
+      There are infinitely many primes that are four apart.
+    \end{corollary}
+    \begin{proof*}
+      The proof is left as an exercise for the interested reader.
+    \end{proof*}
+
+  \item \label{qst:5}
+    Here is a theorem:
+    \begin{theorem}[Pythagorean theorem]\label{thm:1}
+      For any right-triangle, the square of the hypotenuse is equal
+      to the sum of squares of the other two sides.
+    \end{theorem}
+    \begin{proof*}
+      The proof is left as an exercise for the interested reader.
+    \end{proof*}
+
+  \item \label{qst:6}
+    Here is a proposition based off \autoref{thm:1}:
+    \begin{proposition}[Fermat's Last Theorem]\label{prp:1}
+      $a^n + b^n \neq c^n$ for any choices of $n > 2$.
+    \end{proposition}
+    \begin{proof*}
+      I have a truly marvelous demonstration of this proposition that
+      this margin is too narrow to contain.
+    \end{proof*}
+
+  \item \label{qst:7}
+    Here is a definition:
+    \begin{definition}
+      Let $G = (V, E)$ be an undirected graph with edge-weights given
+      by $w \colon E \rightarrow \R$. Assume that $w(e) \neq w(f)$
+      whenever $e, f$ are distinct edges of $G$. We say that an edge
+      is {\it treacherous} if it the maximum weight edge of some cycle
+      of $G$. On the other hand, and edge is {\it reliable} if it is
+      not contained in any cycle of $G$.
+    \end{definition}
+\end{enumerate}
+\end{document}

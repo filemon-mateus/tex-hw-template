@@ -1,0 +1,247 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{preamble}[
+  2021/11/21
+  A Base LaTeX Template for Math Inclined Assignments.
+  Provided by Filemon Mateus <mateus@utah.edu>
+]
+% default base packages
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{bm}
+\RequirePackage{caption}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{float}
+\RequirePackage{fontspec}
+\RequirePackage{footmisc}
+\RequirePackage{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{mathpazo}
+\RequirePackage{url}
+\RequirePackage{hyperref}
+\RequirePackage{lastpage}
+\RequirePackage{mdframed}
+\RequirePackage{xcolor}
+\RequirePackage{thmtools}
+\RequirePackage{subcaption}
+
+% new font 'Fontin'
+\newfontfamily\fontin[
+  Path={otf-fonts/},
+  Extension={.otf},
+  UprightFont={*-Regular},
+  ItalicFont={*-Italic},
+  BoldFont={*-Bold},
+  SmallCapsFont={*-SmallCaps}
+]{Fontin}
+
+% useful generic settings
+\geometry{
+  margin={1in},
+}
+\captionsetup{
+  labelfont={bf},
+  labelsep={period},
+  justification={centering},
+}
+\hypersetup{
+  colorlinks,
+  linkcolor={purple!80!black},
+  citecolor={green!80!black},
+  urlcolor={blue!80!black}
+}
+
+% relax a few already declared environments for customization
+\let\bf\relax
+\let\it\relax
+\let\sc\relax
+\let\sf\relax
+\let\proof\relax
+\let\endproof\relax
+\let\P\relax
+\let\itemautorefname\relax
+
+% useful operators
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\P}{\mathbb{P}}
+\DeclareMathOperator*{\N}{\mathbb{N}}
+\DeclareMathOperator*{\Q}{\mathbb{Q}}
+\DeclareMathOperator*{\R}{\mathbb{R}}
+\DeclareMathOperator*{\I}{\mathbb{I}}
+
+% useful stylistic colors
+\definecolor{claimbg}{HTML}{fafafa}
+\definecolor{claimfg}{HTML}{000000}
+\definecolor{lemmabg}{HTML}{fffaf8}
+\definecolor{lemmafg}{HTML}{983b0f}
+\definecolor{remarkbg}{HTML}{fafafa}
+\definecolor{remarkfg}{HTML}{000000}
+\definecolor{theorembg}{HTML}{f2fff2}
+\definecolor{theoremfg}{HTML}{008000}
+\definecolor{corollarybg}{HTML}{f2fbfc}
+\definecolor{corollaryfg}{HTML}{191971}
+\definecolor{definitionbg}{HTML}{f2fff2}
+\definecolor{definitionfg}{HTML}{008000}
+\definecolor{propositionbg}{HTML}{fcf3f6}
+\definecolor{propositionfg}{HTML}{60001a}
+
+% useful stylistic settings for proofs, remarks, claims, lemmas, and more
+\mdfdefinestyle{claimbox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=claimfg,
+  backgroundcolor=claimbg,
+}
+\mdfdefinestyle{remarkbox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=remarkfg,
+  backgroundcolor=remarkbg,
+}
+\mdfdefinestyle{theorembox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=theoremfg,
+  backgroundcolor=theorembg,
+}
+\mdfdefinestyle{lemmabox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=lemmafg,
+  backgroundcolor=lemmabg,
+}
+\mdfdefinestyle{corollarybox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=corollaryfg,
+  backgroundcolor=corollarybg,
+}
+\mdfdefinestyle{definitionbox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=definitionfg,
+  backgroundcolor=definitionbg,
+}
+\mdfdefinestyle{propositionbox}{
+  innertopmargin=8,
+  innerbottommargin=8,
+  linewidth=3,
+  topline=false,
+  leftline=true,
+  rightline=false,
+  bottomline=false,
+  linecolor=propositionfg,
+  backgroundcolor=propositionbg,
+}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{claimfg},
+  bodyfont=\fontin,
+  mdframed={style=claimbox},
+  headpunct={~\textemdash~},
+]{claim}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{lemmafg},
+  bodyfont=\fontin,
+  mdframed={style=lemmabox},
+  headpunct={~\textemdash~},
+]{lemma}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{remarkfg},
+  bodyfont=\fontin,
+  mdframed={style=remarkbox},
+  headpunct={~\textemdash~},
+]{remark}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{theoremfg},
+  bodyfont=\fontin,
+  mdframed={style=theorembox},
+  headpunct={~\textemdash~},
+]{theorem}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{corollaryfg},
+  bodyfont=\fontin,
+  mdframed={style=corollarybox},
+  headpunct={~\textemdash~},
+]{corollary}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{definitionfg},
+  bodyfont=\fontin,
+  mdframed={style=definitionbox},
+  headpunct={~\textemdash~},
+]{definition}
+\declaretheoremstyle[
+  headfont=\bf\sf\color{propositionfg},
+  bodyfont=\fontin,
+  mdframed={style=propositionbox},
+  headpunct={~\textemdash~},
+]{proposition}
+\declaretheoremstyle[
+  headfont=\itshape\fontin,
+  bodyfont=\fontin,
+  postheadspace=.5em,
+  qed=$\square$,
+]{proof}
+
+% enumerate proofs, remarks, lemmas, and claims by default
+\declaretheorem[style=proof,name=Proof,numbered=yes]{proof}
+\declaretheorem[style=claim,name=Claim,numbered=yes]{claim}
+\declaretheorem[style=lemma,name=Lemma,numbered=yes]{lemma}
+\declaretheorem[style=remark,name=Remark,numbered=yes]{remark}
+\declaretheorem[style=theorem,name=Theorem,numbered=yes]{theorem}
+\declaretheorem[style=corollary,name=Corollary,numbered=yes]{corollary}
+\declaretheorem[style=definition,name=Definition,numbered=yes]{definition}
+\declaretheorem[style=proposition,name=Proposition,numbered=yes]{proposition}
+
+% unenumerate proofs, remarks, lemmas, and claims on "*" envs
+\declaretheorem[style=proof,name=Proof,numbered=no]{proof*}
+\declaretheorem[style=claim,name=Claim,numbered=no]{claim*}
+\declaretheorem[style=lemma,name=Lemma,numbered=no]{lemma*}
+\declaretheorem[style=remark,name=Remark,numbered=no]{remark*}
+\declaretheorem[style=theorem,name=Theorem,numbered=no]{theorem*}
+\declaretheorem[style=corollary,name=Corollary,numbered=no]{corollary*}
+\declaretheorem[style=definition,name=Definition,numbered=no]{definition*}
+\declaretheorem[style=proposition,name=Proposition,numbered=no]{proposition*}
+
+% personal custom header
+\newcommand{\header}[5]{
+  \pagestyle{fancy}
+  \lhead{\fontin #1}
+  \chead{\fontin #2~~\textemdash~~#3~~\textemdash~~#4}
+  \rhead{\fontin #5}
+  \cfoot{{\bf\fontin\thepage} {\fontin of} {\bf\fontin\pageref{LastPage}}}
+}
+
+% load in algopseudocode and custom latex macros
+\input{misc-file/algo}
+\input{misc-file/macros}
