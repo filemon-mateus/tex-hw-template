@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{preamble}[
   2021/11/21
-  A Base LaTeX Template for Math Inclined Assignments.
+  A Base LaTeX Template for Mathematically Inclined Assignments.
   Provided by Filemon Mateus <mateus@utah.edu>
 ]
 % default base packages
@@ -13,7 +13,6 @@
 \RequirePackage{enumitem}
 \RequirePackage{fancyhdr}
 \RequirePackage{float}
-\RequirePackage{fontspec}
 \RequirePackage{footmisc}
 \RequirePackage{geometry}
 \RequirePackage{graphicx}
@@ -25,16 +24,6 @@
 \RequirePackage{xcolor}
 \RequirePackage{thmtools}
 \RequirePackage{subcaption}
-
-% new font 'Fontin'
-\newfontfamily\fontin[
-  Path={otf-fonts/},
-  Extension={.otf},
-  UprightFont={*-Regular},
-  ItalicFont={*-Italic},
-  BoldFont={*-Bold},
-  SmallCapsFont={*-SmallCaps}
-]{Fontin}
 
 % useful generic settings
 \geometry{
@@ -166,49 +155,49 @@
 }
 \declaretheoremstyle[
   headfont=\bf\sf\color{claimfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=claimbox},
   headpunct={~\textemdash~},
 ]{claim}
 \declaretheoremstyle[
   headfont=\bf\sf\color{lemmafg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=lemmabox},
   headpunct={~\textemdash~},
 ]{lemma}
 \declaretheoremstyle[
   headfont=\bf\sf\color{remarkfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=remarkbox},
   headpunct={~\textemdash~},
 ]{remark}
 \declaretheoremstyle[
   headfont=\bf\sf\color{theoremfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=theorembox},
   headpunct={~\textemdash~},
 ]{theorem}
 \declaretheoremstyle[
   headfont=\bf\sf\color{corollaryfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=corollarybox},
   headpunct={~\textemdash~},
 ]{corollary}
 \declaretheoremstyle[
   headfont=\bf\sf\color{definitionfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=definitionbox},
   headpunct={~\textemdash~},
 ]{definition}
 \declaretheoremstyle[
   headfont=\bf\sf\color{propositionfg},
-  bodyfont=\fontin,
+  bodyfont=\normalfont,
   mdframed={style=propositionbox},
   headpunct={~\textemdash~},
 ]{proposition}
 \declaretheoremstyle[
-  headfont=\itshape\fontin,
-  bodyfont=\fontin,
+  headfont=\itshape,
+  bodyfont=\normalfont,
   postheadspace=.5em,
   qed=$\square$,
 ]{proof}
@@ -236,10 +225,10 @@
 % personal custom header
 \newcommand{\header}[5]{
   \pagestyle{fancy}
-  \lhead{\fontin #1}
-  \chead{\fontin #2~~\textemdash~~#3~~\textemdash~~#4}
-  \rhead{\fontin #5}
-  \cfoot{{\bf\fontin\thepage} {\fontin of} {\bf\fontin\pageref{LastPage}}}
+  \lhead{#1}
+  \chead{#2~~\textemdash~~#3~~\textemdash~~#4}
+  \rhead{#5}
+  \cfoot{{\bf\thepage}~{/}~{\bf\pageref{LastPage}}}
 }
 
 % load in algopseudocode and custom latex macros

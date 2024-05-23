@@ -1,6 +1,18 @@
 \RequirePackage{algorithm}
 \RequirePackage{algpseudocode}
 
+\let\algorithmicensure\relax
+\let\algorithmicrequire\relax
+
+\algrenewcommand{\algorithmicprocedure}{
+  {\bf function}
+}
+\algnewcommand{\algorithmicforeach}{
+  {\bf for each}
+}
+\algdef{S}[FOR]{ForEach}[1]{
+  \algorithmicforeach\ #1\ \algorithmicdo
+}
 \algrenewcommand{\algorithmiccomment}[1]{
-  {\hfill\footnotesize\fontin\color{green!80!black} //\ #1}
+  {\hfill\footnotesize\tt\color{green!80!black} //\ #1}
 }

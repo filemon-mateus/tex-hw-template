@@ -2,7 +2,7 @@ HW := hw1.pdf hw2.pdf hw3.pdf hw4.pdf hw5.pdf hw6.pdf hw7.pdf
 
 CUPDATE ?= 0
 LATEXMK := latexmk
-OPTIONS := -pdfxe -outdir=pdf-files -auxdir=aux-files
+OPTIONS := -pdf -outdir=pdf-files -auxdir=aux-files
 
 ifeq ($(CUPDATE), 1)
 	OPTIONS += -pvc
