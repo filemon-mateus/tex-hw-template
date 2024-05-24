@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1716520588 "tex-files/hw1.tex" "pdf-files/hw1.pdf" "hw1" 1716520590 0
+["pdflatex"] 1716571954 "tex-files/hw1.tex" "pdf-files/hw1.pdf" "hw1" 1716571955 0
   "/etc/texmf/web2c/texmf.cnf" 1686612357 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -124,12 +124,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1676468108 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1716513418 4625341 ace23cee1cac21b8fbf340832fd0c540 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1686612509 7881144 9e0b3b0b599db51485f6f9250d2a040e ""
-  "aux-files/hw1.aux" 1716520589 3661 24b0342c0ecb76415fd3952e12ae8ed2 "pdflatex"
-  "aux-files/hw1.out" 1716520589 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "misc-file/algo.tex" 1716437096 408 37a4eafe8041b9d29ad04f57b2bf0137 ""
-  "misc-file/macros.tex" 1716514581 401 9550b1a460e00c4e1f891e0b47cb7cbe ""
-  "preamble.sty" 1716520545 5749 65443912d0a589ce3ccd1c09cd5d1e34 ""
-  "tex-files/hw1.tex" 1716520583 2805 fd23a13112078580476e028022b36226 ""
+  "aux-files/hw1.aux" 1716571955 3661 24b0342c0ecb76415fd3952e12ae8ed2 "pdflatex"
+  "aux-files/hw1.out" 1716571955 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "misc-file/algo.tex" 1716520644 408 37a4eafe8041b9d29ad04f57b2bf0137 ""
+  "misc-file/macros.tex" 1716520653 401 9550b1a460e00c4e1f891e0b47cb7cbe ""
+  "preamble.sty" 1716521036 5749 65443912d0a589ce3ccd1c09cd5d1e34 ""
+  "tex-files/hw1.tex" 1716571924 2808 b3753b3fa64c2ac0f9e517cb6e3f4293 ""
   (generated)
   "aux-files/hw1.aux"
   "aux-files/hw1.log"
