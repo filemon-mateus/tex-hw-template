@@ -74,130 +74,105 @@
 \definecolor{propositionbg}{HTML}{fcf3f6}
 \definecolor{propositionfg}{HTML}{60001a}
 
-% useful stylistic settings for proofs, remarks, claims, lemmas, and more
-\mdfdefinestyle{claimbox}{
+% generic box for proofs, remarks, claims, lemmas, and more
+\mdfdefinestyle{genericbox}{
   innertopmargin=8,
   innerbottommargin=8,
-  linewidth=3,
+  linewidth=2,
   topline=false,
-  leftline=true,
   rightline=false,
   bottomline=false,
+}
+\mdfdefinestyle{claimbox}{
+  style=genericbox,
   linecolor=claimfg,
   backgroundcolor=claimbg,
 }
 \mdfdefinestyle{remarkbox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=remarkfg,
   backgroundcolor=remarkbg,
 }
 \mdfdefinestyle{theorembox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=theoremfg,
   backgroundcolor=theorembg,
 }
 \mdfdefinestyle{lemmabox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=lemmafg,
   backgroundcolor=lemmabg,
 }
 \mdfdefinestyle{corollarybox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=corollaryfg,
   backgroundcolor=corollarybg,
 }
 \mdfdefinestyle{definitionbox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=definitionfg,
   backgroundcolor=definitionbg,
 }
 \mdfdefinestyle{propositionbox}{
-  innertopmargin=8,
-  innerbottommargin=8,
-  linewidth=3,
-  topline=false,
-  leftline=true,
-  rightline=false,
-  bottomline=false,
+  style=genericbox,
   linecolor=propositionfg,
   backgroundcolor=propositionbg,
 }
+
+% theorem environment definitions
 \declaretheoremstyle[
   headfont=\bf\sf\color{claimfg},
   bodyfont=\normalfont,
   mdframed={style=claimbox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{claim}
 \declaretheoremstyle[
   headfont=\bf\sf\color{lemmafg},
   bodyfont=\normalfont,
   mdframed={style=lemmabox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{lemma}
 \declaretheoremstyle[
   headfont=\bf\sf\color{remarkfg},
   bodyfont=\normalfont,
   mdframed={style=remarkbox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{remark}
 \declaretheoremstyle[
   headfont=\bf\sf\color{theoremfg},
   bodyfont=\normalfont,
   mdframed={style=theorembox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{theorem}
 \declaretheoremstyle[
   headfont=\bf\sf\color{corollaryfg},
   bodyfont=\normalfont,
   mdframed={style=corollarybox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{corollary}
 \declaretheoremstyle[
   headfont=\bf\sf\color{definitionfg},
   bodyfont=\normalfont,
   mdframed={style=definitionbox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{definition}
 \declaretheoremstyle[
   headfont=\bf\sf\color{propositionfg},
   bodyfont=\normalfont,
   mdframed={style=propositionbox},
-  headpunct={~\textemdash~},
+  headpunct={~~\textemdash~~},
+  postheadspace=0em,
 ]{proposition}
 \declaretheoremstyle[
   headfont=\itshape,
   bodyfont=\normalfont,
-  postheadspace=.5em,
+  postheadspace=0.5em,
   qed=$\square$,
 ]{proof}
 

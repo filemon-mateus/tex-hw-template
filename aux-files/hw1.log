@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.12)  23 MAY 2024 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.6.12)  23 MAY 2024 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,38 +568,38 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 Package thmtools Info: Key `mdframed' (with value `style=claimbox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=claim' on input line 160.
+(thmtools)             that uses `style=claim' on input line 129.
 Package thmtools Info: Key `mdframed' (with value `style=lemmabox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=lemma' on input line 166.
+(thmtools)             that uses `style=lemma' on input line 136.
 Package thmtools Info: Key `mdframed' (with value `style=remarkbox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=remark' on input line 172.
+(thmtools)             that uses `style=remark' on input line 143.
 Package thmtools Info: Key `mdframed' (with value `style=theorembox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=theorem' on input line 178.
+(thmtools)             that uses `style=theorem' on input line 150.
 Package thmtools Info: Key `mdframed' (with value `style=corollarybox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=corollary' on input line 184.
+(thmtools)             that uses `style=corollary' on input line 157.
 Package thmtools Info: Key `mdframed' (with value `style=definitionbox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=definition' on input line 190.
+(thmtools)             that uses `style=definition' on input line 164.
 Package thmtools Info: Key `mdframed' (with value `style=propositionbox')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=proposition' on input line 196.
+(thmtools)             that uses `style=proposition' on input line 171.
 Package thmtools Info: Key `qed' (with value `$\square $')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=proof' on input line 202.
+(thmtools)             that uses `style=proof' on input line 177.
 \c@proof=\count302
 Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line
- 207.
+ 182.
 
 (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2022/06/01 v0.73
@@ -792,10 +792,10 @@ Package rerunfilecheck Info: File `hw1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15371 strings out of 476091
- 253889 string characters out of 5794081
+ 15372 strings out of 476091
+ 253916 string characters out of 5794081
  1877330 words of memory out of 5000000
- 35474 multiletter control sequences out of 15000+600000
+ 35475 multiletter control sequences out of 15000+600000
  517688 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,11n,91p,479b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -810,7 +810,7 @@ ype1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on aux-files/hw1.pdf (1 page, 118192 bytes).
+Output written on aux-files/hw1.pdf (1 page, 118336 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
